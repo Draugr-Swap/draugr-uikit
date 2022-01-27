@@ -2047,7 +2047,7 @@ var links = [
         items: [
             {
                 label: "Github",
-                href: "https://github.com/DraugrDefi/",
+                href: "https://github.com/Draugr-Swap/",
             },
             {
                 label: "Docs",
