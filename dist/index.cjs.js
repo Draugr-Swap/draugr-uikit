@@ -2323,18 +2323,17 @@ var Icon$11 = function (props) {
 };
 
 var Icon$12 = function (props) {
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
-        React__default['default'].createElement("path", { d: "M24 0H8C3.58172 0 0 3.58172 0 8V24C0 28.4183 3.58172 32 8 32H24C28.4183 32 32 28.4183 32 24V8C32 3.58172 28.4183 0 24 0Z", fill: "#1E2026" }),
-        React__default['default'].createElement("path", { d: "M16.2857 4L9.97035 7.6761L12.2922 9.03415L16.2857 6.7161L20.2792 9.03415L22.6011 7.6761L16.2857 4Z", fill: "#F0B90B" }),
-        React__default['default'].createElement("path", { d: "M20.2792 10.9541L22.6011 12.3122V15.0283L18.6075 17.3463V21.9824L16.2857 23.3405L13.9639 21.9824V17.3463L9.97035 15.0283V12.3122L12.2922 10.9541L16.2857 13.2722L20.2792 10.9541Z", fill: "#F0B90B" }),
-        React__default['default'].createElement("path", { d: "M22.6011 16.9483V19.6644L20.2792 21.0224V18.3063L22.6011 16.9483Z", fill: "#F0B90B" }),
-        React__default['default'].createElement("path", { d: "M20.2561 22.9424L24.2496 20.6244V15.9883L26.5714 14.6302V21.9824L20.2561 25.6585V22.9424Z", fill: "#F0B90B" }),
-        React__default['default'].createElement("path", { d: "M24.2496 11.3522L21.9278 9.99414L24.2496 8.63609L26.5714 9.99414V12.7102L24.2496 14.0683V11.3522Z", fill: "#F0B90B" }),
-        React__default['default'].createElement("path", { d: "M13.9639 26.642V23.9259L16.2857 25.2839L18.6075 23.9259V26.642L16.2857 28L13.9639 26.642Z", fill: "#F0B90B" }),
-        React__default['default'].createElement("path", { d: "M12.2922 21.0224L9.97035 19.6644V16.9483L12.2922 18.3063V21.0224Z", fill: "#F0B90B" }),
-        React__default['default'].createElement("path", { d: "M16.2857 11.3522L13.9639 9.99414L16.2857 8.63609L18.6075 9.99414L16.2857 11.3522Z", fill: "#F0B90B" }),
-        React__default['default'].createElement("path", { d: "M10.6437 9.99414L8.32183 11.3522V14.0683L6 12.7102V9.99414L8.32183 8.63609L10.6437 9.99414Z", fill: "#F0B90B" }),
-        React__default['default'].createElement("path", { d: "M6 14.6302L8.32183 15.9883V20.6244L12.3154 22.9424V25.6585L6 21.9824V14.6302Z", fill: "#F0B90B" })));
+    return (React__default['default'].createElement("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 32 32" },
+        React__default['default'].createElement("defs", null,
+            React__default['default'].createElement("mask", { id: "mask", x: "10", y: "6", width: "93.1", height: "20", maskUnits: "userSpaceOnUse" },
+                React__default['default'].createElement("g", { id: "a" },
+                    React__default['default'].createElement("path", { fillRule: "evenodd", fill: ":#fff", d: "M10,6h93.1V26H10Z" })))),
+        React__default['default'].createElement("title", null, "fa"),
+        React__default['default'].createElement("g", { id: "Layer_2", "data-name": "Layer 2" },
+            React__default['default'].createElement("g", { id: "Layer_1-2", "data-name": "Layer 1" },
+                React__default['default'].createElement("circle", { fill: "#13b5ec", cx: "16", cy: "16", r: "16" }),
+                React__default['default'].createElement("g", { mask: "url(#mask)" },
+                    React__default['default'].createElement("path", { fillRule: "evenodd", fill: ":#fff", d: "M17.2,12.9l3.6-2.1V15Zm3.6,9L16,24.7l-4.8-2.8V17L16,19.8,20.8,17ZM11.2,10.8l3.6,2.1L11.2,15Zm5.4,3.1L20.2,16l-3.6,2.1Zm-1.2,4.2L11.8,16l3.6-2.1Zm4.8-8.3L16,12.2,11.8,9.8,16,7.3ZM10,9.4V22.5l6,3.4,6-3.4V9.4L16,6Z" }))))));
 };
 
 var connectors = [
@@ -2364,9 +2363,9 @@ var connectors = [
         connectorId: "walletconnect",
     },
     {
-        title: "Binance Chain Wallet",
+        title: "Fantom Wallet",
         icon: Icon$12,
-        connectorId: "bsc",
+        connectorId: "fantom",
     },
 ];
 var localStorageKey = "accountStatus";
@@ -2431,7 +2430,7 @@ var AccountModal = function (_a) {
     return (React__default['default'].createElement(Modal, { title: "Your wallet", onDismiss: onDismiss },
         React__default['default'].createElement(Text, { fontSize: "20px", bold: true, style: { whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", marginBottom: "8px" } }, account),
         React__default['default'].createElement(Flex, { mb: "32px" },
-            React__default['default'].createElement(LinkExternal, { small: true, href: "https://bscscan.com/address/" + account, mr: "16px" }, "View on BscScan"),
+            React__default['default'].createElement(LinkExternal, { small: true, href: "https://ftmscan.com/address/" + account, mr: "16px" }, "View on FTMScan"),
             React__default['default'].createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
         React__default['default'].createElement(Flex, { justifyContent: "center" },
             React__default['default'].createElement(Button, { size: "sm", variant: "secondary", onClick: function () {
