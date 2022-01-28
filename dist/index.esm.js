@@ -2349,11 +2349,6 @@ var connectors = [
         icon: Icon$11,
         connectorId: "walletconnect",
     },
-    {
-        title: "Fantom Wallet",
-        icon: Icon$12,
-        connectorId: "fantom",
-    },
 ];
 var localStorageKey = "accountStatus";
 
