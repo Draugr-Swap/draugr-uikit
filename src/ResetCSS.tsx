@@ -1,6 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
 const ResetCSS = createGlobalStyle`
+  @font-face {
+    font-family: Norse;
+    src: url(./fonts/Norse.otf);
+  }
+  * {
+    font-family: Norse;
+  }
   /* prettier-ignore */
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
