@@ -7,6 +7,7 @@ const ResetCSS = createGlobalStyle`
   }
   * {
     font-family: Norse;
+    color: white !important;
   }
   /* prettier-ignore */
   html, body, div, span, applet, object, iframe,
