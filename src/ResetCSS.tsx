@@ -28,7 +28,6 @@ const ResetCSS = createGlobalStyle`
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
-    background: #4D4F96;
   }
   /* HTML5 display-role reset for older browsers */
   /* prettier-ignore */
