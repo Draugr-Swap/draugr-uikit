@@ -4,7 +4,7 @@ import { SvgProps } from "../types";
 
 const Icon: React.FC<SvgProps> = (props) => {
   return (
-    <h2>DRAUGR SWAP</h2>
+    <h2 {...props}>DRAUGR SWAP</h2>
   );
 };
 

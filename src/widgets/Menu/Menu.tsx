@@ -14,6 +14,7 @@ import Avatar from "./Avatar";
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
+  background: #4D4F96;
 `;
 
 const StyledNav = styled.nav<{ showMenu: boolean }>`

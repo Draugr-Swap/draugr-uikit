@@ -8,7 +8,7 @@ interface LogoProps extends SvgProps {
 
 const Logo: React.FC<LogoProps> = ({ isDark, ...props }) => {
   return (
-    <h2>DRAUGR SWAP</h2>
+    <h2 {...props}>DRAUGR SWAP</h2>
   )
 };
 
