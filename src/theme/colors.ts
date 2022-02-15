@@ -23,10 +23,10 @@ export const lightColors: Colors = {
   contrast: "#191326",
   invertedContrast: "#333F68",
   input: "#483f5a",
-  tertiary: "#353547",
+  tertiary: "#F25A29",
   text: '#EAE2FC',
   textDisabled: '#666171',
-  textSubtle: '#F25A29',
+  textSubtle: '#FFFFFF',
   borderColor: "#E9EAEB",
   card: "#4D4F96",
   gradients: {
