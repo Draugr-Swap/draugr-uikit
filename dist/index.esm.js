@@ -139,6 +139,7 @@ var variants = {
     DANGER: "danger",
     SUBTLE: "subtle",
     SUCCESS: "success",
+    INPUT: "input",
 };
 
 var getDisabledStyles = function (_a) {
@@ -2633,18 +2634,17 @@ var baseColors = {
     primaryBright: "#67500c",
     primaryDark: "#8f6e10",
     secondary: "#a56227",
-    success: "#31D0AA",
     warning: "#FFB237",
 };
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#be7434", background: "#433E70", backgroundDisabled: "#3c3742", contrast: "#191326", invertedContrast: "#333F68", input: "#483f5a", tertiary: "#F25A29", text: '#EAE2FC', textDisabled: '#666171', textSubtle: '#FFFFFF', borderColor: "#E9EAEB", card: "#4D4F96", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#F25A29", background: "#433E70", backgroundDisabled: "#3c3742", contrast: "#191326", invertedContrast: "#333F68", input: "#483f5a", tertiary: "#F25A29", text: '#EAE2FC', textDisabled: '#666171', textSubtle: '#FFFFFF', borderColor: "#E9EAEB", card: "#4D4F96", success: "#52FF00", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     } });
 var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#be7434", background: "#343135", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", 
     // primaryDark: "#0098A1",
-    tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#c9c4d4", borderColor: "#524B63", card: "#27262c", gradients: {
+    tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#c9c4d4", borderColor: "#524B63", card: "#27262c", success: "#31D0AA", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     } });
 
@@ -2656,7 +2656,7 @@ var dark = {
 };
 
 var _a$2, _b;
-var PRIMARY = variants.PRIMARY, SECONDARY = variants.SECONDARY, TERTIARY = variants.TERTIARY, TEXT = variants.TEXT, DANGER = variants.DANGER, SUBTLE = variants.SUBTLE, SUCCESS = variants.SUCCESS;
+var PRIMARY = variants.PRIMARY, SECONDARY = variants.SECONDARY, TERTIARY = variants.TERTIARY, TEXT = variants.TEXT, DANGER = variants.DANGER, SUBTLE = variants.SUBTLE, SUCCESS = variants.SUCCESS, INPUT = variants.INPUT;
 var light$1 = (_a$2 = {},
     _a$2[PRIMARY] = {
         background: lightColors.primary,
@@ -2728,6 +2728,16 @@ var light$1 = (_a$2 = {},
         boxShadowActive: "none",
         color: "#FFFFFF",
     },
+    _a$2[INPUT] = {
+        background: lightColors.success,
+        backgroundActive: lightColors.success + "D9",
+        backgroundHover: lightColors.success + "B3",
+        border: 0,
+        borderColorHover: "currentColor",
+        boxShadow: "none",
+        boxShadowActive: "none",
+        color: "#FFFFFF",
+    },
     _a$2);
 var dark$1 = (_b = {},
     _b[PRIMARY] = __assign({}, light$1.primary),
@@ -2737,6 +2747,7 @@ var dark$1 = (_b = {},
     _b[DANGER] = __assign({}, light$1.danger),
     _b[SUBTLE] = __assign({}, light$1.subtle),
     _b[SUCCESS] = __assign({}, light$1.success),
+    _b[INPUT] = __assign({}, light$1.input),
     _b);
 
 var light$2 = {
