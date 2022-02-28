@@ -69,16 +69,7 @@ export const socials = [
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    items: [
-      {
-        label: "English",
-        href: "https://t.me/DraugrSwapOfficial",
-      },
-      {
-        label: "Announcements",
-        href: "https://t.me/draugrswapannouncements",
-      },
-    ],
+    href: "https://t.me/draugr_swap"
   },
   {
     label: "Twitter",
